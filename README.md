@@ -75,17 +75,17 @@ from PigpioStepperMotor import StepperMotor
 
 pi = pigpio.pi()
 stdscr = curses.initscr()
+stdscr.keypad(True)
 curses.cbreak()
 curses.noecho()
-stdscr.keypad(True)
 
 try:
   motor = StepperMotor(pi, 6, 13, 19, 26)
   while True:
-    symbl = stdscr.getkey()
-    if symbl == "KEY_LEFT":
+    key = stdscr.getkey()
+    if key == "KEY_LEFT":
       motor.doСlockwiseStep()
-    elif symbl == "KEY_RIGHT":
+    elif key == "KEY_RIGHT":
       motor.doСounterclockwiseStep()
 except Exception as e:
   print(e)
