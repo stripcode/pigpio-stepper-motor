@@ -43,7 +43,7 @@ for i in range(4096):
 
 
 
-### Clockwise rotation to 360 degrees. Full-step sequence.
+### Clockwise rotation to 360 degrees. Full-step sequence
 ```python
 import pigpio
 from PigpioStepperMotor import StepperMotor, fullStepSequence
