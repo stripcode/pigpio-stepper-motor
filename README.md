@@ -4,7 +4,7 @@ I use 28BYJ-48 stepper motor and ULN2003 driver. I connect to 6, 13, 19, 26 pin 
 
 ## Examples
 
-### Clockwise rotation to 180 degrees. Half-step sequence (Default)
+### Clockwise rotation to 180 degrees. Half-step sequence (Default sequence = halfStepSequence)
 ```python
 import pigpio
 from PigpioStepperMotor import StepperMotor
@@ -17,7 +17,7 @@ for i in range(2048):
 
 
 
-### Counterclockwise rotation to 180 degrees. Half-step sequence (Default)
+### Counterclockwise rotation to 180 degrees. Half-step sequence
 ```python
 import pigpio
 from PigpioStepperMotor import StepperMotor
@@ -30,7 +30,7 @@ for i in range(2048):
 
 
 
-### Clockwise rotation to 360 degrees. Half-step sequence (Default)
+### Clockwise rotation to 360 degrees. Half-step sequence
 ```python
 import pigpio
 from PigpioStepperMotor import StepperMotor
@@ -56,7 +56,7 @@ for i in range(2048):
 
 
 
-### Clockwise rotation to 180 degrees. Delay = 0.05. (Default delay 0.0025)
+### Clockwise rotation to 180 degrees. Delay = 0.05 (Default delayAfterStep = 0.0025)
 ```python
 import pigpio
 from PigpioStepperMotor import StepperMotor
