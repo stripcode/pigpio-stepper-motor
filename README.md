@@ -27,6 +27,8 @@ for i in range(2048):
   motor.doСlockwiseStep()
 ```
 
+
+
 ## Clockwise rotation to 180 degrees. Delay = 0.05. Slooooowmoooootiiiiiooooon!
 
 ```
@@ -37,4 +39,34 @@ pi = pigpio.pi()
 motor = StepperMotor(pi, 6, 13, 19, 26,  delayAfterStep = 0.05)
 for i in range(2048):
   motor.doСlockwiseStep()
+```
+
+
+
+## Control stepper motor using keyboard left and right keys
+
+```
+import pigpio
+import curses
+from PigpioStepperMotor import StepperMotor
+
+pi = pigpio.pi()
+stdscr = curses.initscr()
+curses.cbreak()
+curses.noecho()
+stdscr.keypad(True)
+
+try:
+  motor = StepperMotor(pi, 6, 13, 19, 26)
+  while True:
+    symbl = stdscr.getkey()
+    if symbl == "KEY_LEFT":
+      motor.doСlockwiseStep()
+    elif symbl == "KEY_RIGHT":
+      motor.doСounterclockwiseStep()
+except Exception as e:
+  print(e)
+finally:
+  curses.endwin()
+  pi.stop()
 ```
