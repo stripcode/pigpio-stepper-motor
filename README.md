@@ -97,6 +97,7 @@ finally:
 ```
 ## License
 MIT License
+
 Copyright (c) 2016 stripcode
 
 ## Questions?
