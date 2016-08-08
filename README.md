@@ -1,6 +1,6 @@
 # pigpio-stepper-motor
 
-I use 28BYJ-48 stepper motor and ULN2003 driver. I connect to 6, 13, 19, 26 pin and control over pigpio using python3 on Raspberry Pi.
+I use 28BYJ-48 stepper motor (4096 steps) and ULN2003 driver. I connect to 6, 13, 19, 26 pins and control over pigpio using python3 on Raspberry Pi.
 
 ## Examples
 
