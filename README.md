@@ -93,3 +93,6 @@ finally:
   curses.endwin()
   pi.stop()
 ```
+
+## Email me
+nekrasov@stripcode.ru
