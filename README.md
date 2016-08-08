@@ -15,6 +15,21 @@ for i in range(2048):
 ```
 
 
+
+## Counterclockwise rotation to 180 degrees. Half-step sequence (Default)
+
+```python
+import pigpio
+from PigpioStepperMotor import StepperMotor
+
+pi = pigpio.pi()
+motor = StepperMotor(pi, 6, 13, 19, 26)
+for i in range(2048):
+  motor.doСounterclockwiseStep()
+```
+
+
+
 ## Clockwise rotation to 360 degrees. Full-step sequence.
 
 ```python
