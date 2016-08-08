@@ -56,7 +56,7 @@ for i in range(2048):
 
 
 
-### Clockwise rotation to 180 degrees. Delay = 0.05. Slooooowmoooootiiiiiooooon!
+### Clockwise rotation to 180 degrees. Delay = 0.05. (Default delay 0.0025)
 ```python
 import pigpio
 from PigpioStepperMotor import StepperMotor
