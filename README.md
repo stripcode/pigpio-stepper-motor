@@ -2,7 +2,7 @@
 
 I use 28BYJ-48 stepper motor (4096 steps) and ULN2003 driver. I connect to 6, 13, 19, 26 pins and control over pigpio using python3 on Raspberry Pi.
 
-## Args
+## Motor args
 motor(pi, pin1, pin2, pin3, pin4, [sequence], [delayAfterStep])
 
 * pi - pigpio.pi instance
@@ -11,8 +11,9 @@ motor(pi, pin1, pin2, pin3, pin4, [sequence], [delayAfterStep])
 * delayAfterStep - Delay after step. Default delayAfterStep = 0.0025 second
 
 ## Examples
+I connect driver to 6, 13, 19, 26 pins.
 
-### Clockwise rotation to 180 degrees.
+### Clockwise rotation to 180 degrees
 ```python
 import pigpio
 from PigpioStepperMotor import StepperMotor
@@ -25,7 +26,7 @@ for i in range(2048):
 
 
 
-### Counterclockwise rotation to 180 degrees.
+### Counterclockwise rotation to 180 degrees
 ```python
 import pigpio
 from PigpioStepperMotor import StepperMotor
@@ -64,7 +65,7 @@ for i in range(2048):
 
 
 
-### Clockwise rotation to 180 degrees. Delay = 0.05 second Slowmotion.
+### Clockwise rotation to 180 degrees. Delay = 0.05 second. Slowmotion
 ```python
 import pigpio
 from PigpioStepperMotor import StepperMotor
