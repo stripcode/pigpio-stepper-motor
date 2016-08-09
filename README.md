@@ -39,27 +39,14 @@ for i in range(2048):
 
 
 
-### Clockwise rotation to 360 degrees. Half-step sequence
-```python
-import pigpio
-from PigpioStepperMotor import StepperMotor
-
-pi = pigpio.pi()
-motor = StepperMotor(pi, 6, 13, 19, 26)
-for i in range(4096):
-  motor.doСlockwiseStep()
-```
-
-
-
-### Clockwise rotation to 360 degrees. Full-step sequence
+### Clockwise rotation to 180 degrees. Full-step sequence
 ```python
 import pigpio
 from PigpioStepperMotor import StepperMotor, fullStepSequence
 
 pi = pigpio.pi()
 motor = StepperMotor(pi, 6, 13, 19, 26, sequence = fullStepSequence)
-for i in range(2048):
+for i in range(1024):
   motor.doСlockwiseStep()
 ```
 
