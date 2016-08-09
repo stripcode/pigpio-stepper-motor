@@ -3,7 +3,7 @@
 I use 28BYJ-48 stepper motor (4096 steps) and ULN2003 driver. I connect to 6, 13, 19, 26 pins and control over pigpio using python3 on Raspberry Pi.
 
 ## Args
-motor(pi, pin1, pin2, pin3, pin4, sequence = halfStepSequence, delayAfterStep = 0.0025)
+motor(pi, pin1, pin2, pin3, pin4, [sequence], [delayAfterStep])
 
 * pi - pigpio.pi instance
 * pin1, pin2, pin3, pin4 - pins has been connected to the driver
