@@ -11,7 +11,7 @@ motor(pi, pin1, pin2, pin3, pin4, [sequence], [delayAfterStep])
 * delayAfterStep - Delay after step. Default delayAfterStep = 0.0025 second
 
 ## Examples
-I connect driver to 6, 13, 19, 26 pins.
+I connect driver to 6, 13, 19, 26 pins. I use 28BYJ-48 stepper motor (4096 steps in halfStepSequence) and ULN2003 driver.
 
 ### Clockwise rotation to 180 degrees
 ```python
